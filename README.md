@@ -40,12 +40,6 @@ ss
 iperf
 ```
 
-#### 通过删除inode来删除文件：
-```
-ls -i  //获取INODE-ID
-find . -inum {INODE-ID} -exec rm {} \;
-```
-
 #### 查看CPU核数
 ```
 总核数 = 物理CPU个数 X 每颗物理CPU的核数
@@ -74,3 +68,10 @@ sync; echo 3 > /proc/sys/vm/drop_caches
 
 注：sync 将刷新文件系统缓冲区（buffer）
 ```
+
+#### 通过删除inode来删除文件：
+```
+ls -i  //获取INODE-ID
+find . -inum {INODE-ID} -exec rm {} \;
+```
+
