@@ -1,13 +1,13 @@
-# rubble
+## rubble
 Common system operating tools
 
-查看进程的异常退出原因
+# 查看进程的异常退出原因
 dmesg | egrep -i 'killed process'
 
-查看某进程的打开文件数
+# 查看某进程的打开文件数
 lsof -p PID | wc -l
 
-通过删除inode来删除文件：
+# 通过删除inode来删除文件：
 ls -i 获取INODE-ID
 find . -inum {INODE-ID} -exec rm {} \;
 
