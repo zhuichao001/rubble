@@ -32,7 +32,7 @@ cat /proc/cpuinfo| grep "cpu cores"| uniq
 cat /proc/cpuinfo| grep "processor"| wc -l
 ```
 
-#### 清楚机器缓存
+#### 清除缓存
 ```
 仅清除页面缓存（PageCache）
 sync; echo 1 > /proc/sys/vm/drop_caches       
