@@ -11,6 +11,35 @@ dmesg | egrep -i 'killed process'
 lsof -p PID | wc -l
 ```
 
+#### 查看磁盘IO
+```
+iostat
+iotop
+sar
+```
+
+#### 查看CPU
+```
+htop, top
+vmstat
+mpstat
+dstat
+```
+
+#### 查看内存
+```
+top
+free
+vmstat
+```
+
+#### 网络监控
+```
+netstat
+ss
+iperf
+```
+
 #### 通过删除inode来删除文件：
 ```
 ls -i  //获取INODE-ID
