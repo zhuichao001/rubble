@@ -11,6 +11,21 @@ dmesg | egrep -i 'killed process'
 lsof -p PID | wc -l
 ```
 
+#### 查看某进程的堆栈空间
+```
+pstack
+gstack
+pstrace 
+strace
+gdb
+```
+
+#### 查看某进程的内存使用
+```
+pmap -d {PID}
+/proc/{PID}/smaps
+```
+
 #### 查看磁盘IO
 ```
 iostat
