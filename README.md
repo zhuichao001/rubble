@@ -5,6 +5,11 @@
 ```
 dmesg | egrep -i 'killed process'
 ```
+#### 操作系统错误日志检查
+```
+cat /var/log/messages | grep ERROR
+dmesg | grep ERROR
+```
 
 #### 查看某进程的打开文件数
 ```
