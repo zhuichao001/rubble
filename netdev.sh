@@ -5,7 +5,7 @@ if [ $# != 1 ] ; then
   echo " e.g.: $0 eth0"
   exit 1
 fi
- 
+
 ethn=$1 #netdev name
  
 while true
