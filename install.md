@@ -1,6 +1,20 @@
-# 远程文件传送工具
+# gcc g++
 ```
-yum install lrzsz
+yum install bzip2
+
+#from ftp: http://ftp.gnu.org/gnu/gcc/
+wget http://ftp.gnu.org/gnu/gcc/gcc-11.3.0/gcc-11.3.0.tar.gz
+tar xvzf gcc-11.3.0.tar.gz
+cd gcc-11.3.0 
+
+#auto install dependings: gmp, mpfr, mpc
+./contrib/download_prerequisites 
+mkdir build && cd build/
+../configure -enable-checking=release -enable-languages=c,c++ -disable-multilib
+
+make
+make install
+/usr/local/bin/gcc --version
 ```
 
 # cmake
@@ -24,4 +38,9 @@ cd protobuf-3.20.1/
 make
 sudo make install 
 protoc --version
+```
+
+# rz & sz
+```
+yum install lrzsz
 ```
