@@ -44,3 +44,21 @@ protoc --version
 ```
 yum install lrzsz
 ```
+
+# gdb
+```
+wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
+yum install lzip
+tar xvf gmp-6.2.1.tar.lz --lzip
+cd gmp-6.2.1
+./configure 
+make && make install
+cd ..
+
+wget https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.gz --no-check-certificate
+tar xvzf gdb-12.1.tar.gz
+cd gdb-12.1
+./configure
+make
+make install
+```
