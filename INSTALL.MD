@@ -27,24 +27,6 @@ cd cmake-3.23.1
 make && make install
 ```
 
-# protobuf
-```
-sudo yum install dnf install autoconf automake libtool
-wget https://github.com/protocolbuffers/protobuf/releases/download/v3.20.1/protobuf-all-3.20.1.tar.gz
-tar xvzf protobuf-all-3.20.1.tar.gz 
-cd protobuf-3.20.1/
-./autogen.sh 
-./configure 
-make
-sudo make install 
-protoc --version
-```
-
-# rz & sz
-```
-yum install lrzsz
-```
-
 # gdb
 ```
 wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
@@ -61,4 +43,22 @@ cd gdb-12.1
 ./configure
 make
 make install
+```
+
+# protobuf
+```
+sudo yum install dnf install autoconf automake libtool
+wget https://github.com/protocolbuffers/protobuf/releases/download/v3.20.1/protobuf-all-3.20.1.tar.gz
+tar xvzf protobuf-all-3.20.1.tar.gz 
+cd protobuf-3.20.1/
+./autogen.sh 
+./configure 
+make
+sudo make install 
+protoc --version
+```
+
+# rz & sz
+```
+yum install lrzsz
 ```
