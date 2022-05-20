@@ -11,9 +11,7 @@ cd gcc-11.3.0
 ./contrib/download_prerequisites 
 mkdir build && cd build/
 ../configure -enable-checking=release -enable-languages=c,c++ -disable-multilib
-
-make
-make install
+make &&make install
 /usr/local/bin/gcc --version
 ```
 
@@ -41,8 +39,7 @@ wget https://ftp.gnu.org/gnu/gdb/gdb-12.1.tar.gz --no-check-certificate
 tar xvzf gdb-12.1.tar.gz
 cd gdb-12.1
 ./configure
-make
-make install
+make && make install
 ```
 
 # protobuf
@@ -53,8 +50,7 @@ tar xvzf protobuf-all-3.20.1.tar.gz
 cd protobuf-3.20.1/
 ./autogen.sh 
 ./configure 
-make
-sudo make install 
+make && make install 
 protoc --version
 ```
 
