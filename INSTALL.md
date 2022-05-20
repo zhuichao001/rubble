@@ -11,7 +11,7 @@ cd gcc-11.3.0
 ./contrib/download_prerequisites 
 mkdir build && cd build/
 ../configure -enable-checking=release -enable-languages=c,c++ -disable-multilib
-make &&make install
+make && make install
 /usr/local/bin/gcc --version
 ```
 
@@ -27,8 +27,8 @@ make && make install
 
 # gdb
 ```
-wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
 yum install lzip
+wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
 tar xvf gmp-6.2.1.tar.lz --lzip
 cd gmp-6.2.1
 ./configure 
