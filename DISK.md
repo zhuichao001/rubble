@@ -1,5 +1,5 @@
 #释放进程
 ```
-sudo lsof | grep delete
+sudo lsof | grep deleted
 kill -9 {PID}
 ```
