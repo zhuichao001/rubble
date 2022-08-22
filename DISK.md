@@ -1,4 +1,4 @@
-#释放进程
+## 释放进程
 ```
 du -sh * #Real Used
 df -h    #Total Used
