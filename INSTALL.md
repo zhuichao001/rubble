@@ -1,4 +1,4 @@
-# gcc g++
+### gcc g++
 ```
 yum install bzip2
 
@@ -6,6 +6,7 @@ yum install bzip2
 wget http://ftp.gnu.org/gnu/gcc/gcc-11.3.0/gcc-11.3.0.tar.gz
 tar xvzf gcc-11.3.0.tar.gz
 cd gcc-11.3.0 
+```
 
 #auto install dependings: gmp, mpfr, mpc
 ./contrib/download_prerequisites 
@@ -15,7 +16,7 @@ make && make install
 /usr/local/bin/gcc --version
 ```
 
-# cmake
+### cmake
 ```
 yum install openssl openssl-devel
 wget https://github.com/Kitware/CMake/releases/download/v3.23.1/cmake-3.23.1.tar.gz
@@ -25,7 +26,7 @@ cd cmake-3.23.1
 make && make install
 ```
 
-# gdb
+### gdb
 ```
 yum install lzip
 wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
@@ -42,7 +43,7 @@ cd gdb-12.1
 make && make install
 ```
 
-# protobuf
+### protobuf
 ```
 sudo yum install dnf install autoconf automake libtool
 wget https://github.com/protocolbuffers/protobuf/releases/download/v3.20.1/protobuf-all-3.20.1.tar.gz
@@ -54,7 +55,7 @@ make && make install
 protoc --version
 ```
 
-# rz & sz
+### rz & sz
 ```
 yum install lrzsz
 ```
