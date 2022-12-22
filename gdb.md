@@ -18,6 +18,13 @@ Method-II:
   (gdb) b <...> if condition
 ```
 
+##  Continue, Step-in or Next
+```
+  (gdb) c
+  (gdb) s
+  (gdb) n
+```
+
 ## 查看调用栈帧
 ```
   $ gdb program  
@@ -35,11 +42,4 @@ Method-II:
 ## 观察变量或表达式
 ```
   (gdb) watch <<variable>>
-```
-
-##  Continue, Step-in or Next
-```
-  (gdb) c
-  (gdb) s
-  (gdb) n
 ```
