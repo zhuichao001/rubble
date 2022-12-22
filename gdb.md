@@ -31,3 +31,8 @@ Method-II:
   (gdb) fin
   #It'll execute to the point where function returns.
 ```
+
+## 观察变量或表达式
+```
+  (gdb) watch <<variable>>
+```
