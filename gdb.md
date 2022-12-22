@@ -15,4 +15,5 @@ Method-II:
   (gdb) b function
   (gdb) b filename:function
   (gdb) b filename:linenum
+  (gdb) b <...> if condition
 ```
