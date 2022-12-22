@@ -8,3 +8,11 @@ Method-II:
   $ gdb program  
   (gdb) r arg1 arg2 ... argN
 ```
+
+## 设置断点
+```
+  $ gdb program  
+  (gdb) b function
+  (gdb) b filename:function
+  (gdb) b filename:linenum
+```
