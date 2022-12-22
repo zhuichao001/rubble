@@ -17,3 +17,17 @@ Method-II:
   (gdb) b filename:linenum
   (gdb) b <...> if condition
 ```
+
+## 查看调用栈帧
+```
+  $ gdb program  
+  (gdb) backtrace (or bt as shortcut)
+  # OR
+  (gdb) info stack
+```
+
+## 执行到函数返回
+```
+  (gdb) fin
+  #It'll execute to the point where function returns.
+```
