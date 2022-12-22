@@ -29,10 +29,17 @@ Method-II:
 ## 执行到函数返回
 ```
   (gdb) fin
-  #It'll execute to the point where function returns.
+  #It will execute to the point where function returns.
 ```
 
 ## 观察变量或表达式
 ```
   (gdb) watch <<variable>>
+```
+
+##  Continue, Step-in or Next
+```
+  (gdb) c
+  (gdb) s
+  (gdb) n
 ```
