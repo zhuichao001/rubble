@@ -43,3 +43,19 @@ Method-II:
 ```
   (gdb) watch <<variable>>
 ```
+
+## 忽略断点
+```
+  (gdb) break test.cpp:18
+  (gdb) info breakpoints
+  Num     Type           Disp Enb Address            What
+  1       breakpoint     keep y   0x00000000008005cd in main() at test.cpp:18
+  (gdb) ignore 1 1000
+  Will ignore next 1000 crossings of breakpoint 1.
+  (gdb) run
+```
+
+## 删除断点
+```
+  (gdb) d <<breakpoint num>>
+```
