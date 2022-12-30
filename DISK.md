@@ -1,3 +1,8 @@
+## 查看某类型文件大小
+```
+ls -l *.log | awk '{sum += $5} END{print sum}'
+```
+
 ## 释放进程
 ```
 du -sh * #Real Used
