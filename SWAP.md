@@ -14,3 +14,5 @@ $ sudo sysctl vm.swappiness=10
 ```
 vm.swappiness=10
 ```
+
+备注：设置为0将导致内核仅在内存压力达到可怕的水平时才进行交换
