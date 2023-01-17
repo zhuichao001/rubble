@@ -11,7 +11,13 @@ sudo lsof | grep deleted | sort -nrk 7 | more
 kill -9 {PID}
 ```
 
-## 测试磁盘速度
+## 测试磁盘写速度
 ```
 dd if=/dev/zero of=test bs=64k count=4k oflag=dsync
+```
+
+## 测试磁盘读速度
+```
+dd if=/dev/zero of=image bs=8G count=1
+dd if=./image of=/dev/null bs=4k
 ```
