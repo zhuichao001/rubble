@@ -22,3 +22,14 @@ numactl -C 0-7 ./mongod
 taskset -c 0 ./redis-server
 ```
 - （4）在C/C++代码中通过sched_setaffinity函数来设置线程亲和性
+
+## NUMA内存分配策略
+- 有以下4种
+  - 缺省default:总是在本地节点分配(当前进程运行的节点上)。
+  - 绑定bind:强制分配到指定节点上。
+  - 交叉interleavel:在所有节点或者指定节点上交叉分配内存。
+  -优先preferred:在指定节点上分配，失败则在其他节点上分配。
+- 查看当前系统NUMA策略
+```
+  numactl --show
+```
