@@ -3,3 +3,8 @@
 lsof -a -p {PID}
 ls -l /proc/{PID}/fd | wc -l
 ```
+
+## 设置系统的最大打开文件数
+```
+echo 10000000 > /proc/sys/fs/file-max
+```
