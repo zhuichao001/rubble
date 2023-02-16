@@ -1,4 +1,4 @@
-## 设置swappiness
+#### 设置swappiness
 查看当前值：
 ```
 cat /proc/sys/vm/swappiness

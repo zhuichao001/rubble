@@ -1,4 +1,4 @@
-## 使用systemctl来接管服务
+#### 使用systemctl来接管服务
 ```
 [Unit]
 Description=Example daemon
@@ -13,7 +13,7 @@ ExecStop=/bin/kill -9 $MAINPID
 WantedBy=multi-user.target
 ```
 
-## 安装
+#### 安装
 ```
 cp example.service /usr/lib/systemd/system/
 systemctl enable example.service

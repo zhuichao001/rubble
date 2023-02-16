@@ -1,9 +1,9 @@
-## numactl工具
+#### numactl工具
 numactl工具可用于查看当前服务器的NUMA节点配置、状态（也可通过该工具将进程绑定到指定CPU核上）  
 - numactl -H 查看当前服务器的NUMA配置
 - numastat 查看当前的NUMA运行状态
 
-## NUMA优化
+#### NUMA优化
 减少跨NUMA访问内存  
 - （1）将设备中断绑定到特定CPU核上
 ```
@@ -23,7 +23,7 @@ taskset -c 0 ./redis-server
 ```
 - （4）通过sched_setaffinity()函数来设置线程亲和性
 
-## NUMA内存分配策略
+#### NUMA内存分配策略
 - 缺省default：总是在本地节点分配(当前进程运行的节点上)
 - 绑定bind：强制分配到指定节点上
 - 交叉interleavel：在所有节点或者指定节点上交叉分配内存
