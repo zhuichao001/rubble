@@ -8,3 +8,10 @@ ls -l /proc/{PID}/fd | wc -l
 ```
 echo 10000000 > /proc/sys/fs/file-max
 ```
+
+#### 通过删除inode来删除文件：
+```
+ls -i  //获取INODE-ID
+find . -inum {INODE-ID} -exec rm {} \;
+```
+

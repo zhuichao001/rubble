@@ -1,3 +1,10 @@
+#### 查看内存
+```
+top
+free
+vmstat
+```
+
 #### 修改ASLR
 ```
 sysctl -w kernel.randomize_va_space=val
@@ -11,3 +18,4 @@ val=2:则是在 1 的基础上增加堆地址的随机化
 vim /etc/sysctl.conf
 kernel.randomize_va_space = value
 ```
+
