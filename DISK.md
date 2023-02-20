@@ -29,3 +29,11 @@ cat /sys/block/disk-name/queue/discard_zeroes_data
 
 mount -t ext4 -o discard /dev/sda2 /mnt
 ```
+
+#### 查看磁盘IO
+```
+iostat
+iotop
+sar
+```
+
