@@ -11,6 +11,6 @@ perf record -F 99 -g -p {PID}
 perf script -i perf.data &> perf.unfold
 
 //download and prepare FlameGraph 
-./stackcollapse-perf.pl ../perf.unfold &>../perf.fold
-./flamegraph.pl ../perf.fold > ../perf.svg
+./FlameGraph/stackcollapse-perf.pl ./perf.unfold &>./perf.fold
+./FlameGraph/flamegraph.pl ./perf.fold > ./perf.svg
 ```
