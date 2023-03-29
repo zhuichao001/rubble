@@ -5,6 +5,17 @@ free
 vmstat
 ```
 
+### 查看系统内存占用
+```
+cat /proc/meminfo
+cat /proc/vmstat
+```
+
+### 查看某进程内存占用
+```
+cat /proc/{pid}/status
+```
+
 #### 修改ASLR
 ```
 sysctl -w kernel.randomize_va_space=val
