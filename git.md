@@ -14,3 +14,20 @@
   $ git submodule init {DEST_DIR}/yyy
   $ git submodule update
 ```
+
+#### 撤销最近一次提交
+```
+//回滚但不删除最近一次修改
+git reset --soft HEAD^
+//回滚并且删除最近一次修改
+git reset --hard HEAD^
+```
+
+#### 设定全局的账号名
+```
+  $ git config --global user.name {USER_NAME}
+  $ git config --global user.email  {USER_EMAIL}
+  //查看
+  $ git config user.name 
+  $ git config user.email 
+```
