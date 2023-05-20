@@ -31,3 +31,15 @@ git reset --hard HEAD^
   $ git config user.name 
   $ git config user.email 
 ```
+
+#### 检出远程分支
+```
+  git branch -r
+  git checkout origin/REPO
+  git checkout REPO
+```
+
+#### 缓存账号信息
+```
+  git config --global credential.helper store
+```
