@@ -76,3 +76,8 @@ cd build_gcc_5.3.0
 make -j8
 sudo make install
 ```
+
+#### 安装cygwin
+```
+http://www.cygwin.com/setup-x86_64.exe
+```
