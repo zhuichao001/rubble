@@ -77,7 +77,13 @@ make -j8
 sudo make install
 ```
 
-#### 安装cygwin
+#### 安装Cygwin
 ```
 http://www.cygwin.com/setup-x86_64.exe
+```
+#### 升级Cygwin
+```
+$ curl -O https://cygwin.com/setup-x86.exe
+$ chmod a+x setup-x86
+$ ./setup-x86 --no-desktop --no-shortcuts --no-startmenu --quiet-mode --upgrade-also --site http://mirrors.163.com/cygwin/
 ```
