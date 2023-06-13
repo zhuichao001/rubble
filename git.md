@@ -1,14 +1,7 @@
 
-#### 连接并合并远程更新
-```
-  $ git remote add public https://github.com/xxx/yyy.git
-  $ git fetch public
-  $ git merge public/master
-```
-
 #### 添加子项目
 ```
-  $ git submodule add https://github.com/xxx/yyy.git {DEST_DIR}/yyy
+  $ git submodule add https://github.com/PROJ/REPO.git {DEST_DIR}/yyy
   $ git commit "some comments"
 
   $ git submodule init {DEST_DIR}/yyy
@@ -43,3 +36,18 @@ git reset --hard HEAD^
 ```
   git config --global credential.helper store
 ```
+
+#### 连接并合并远程更新
+```
+  $ git remote add public https://github.com/PROJ/REPO.git
+  $ git fetch public
+  $ git merge public/master
+```
+
+#### 删除本地/远程分支
+```
+  $ git ranch -d REPO
+  $ git ranch -D REPO
+  $ git push origin --delete REPO
+```
+
