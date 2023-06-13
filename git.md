@@ -16,6 +16,13 @@ git reset --soft HEAD^
 git reset --hard HEAD^
 ```
 
+#### 检出远程分支
+```
+  git branch -r
+  git checkout origin/REPO
+  git checkout REPO
+```
+
 #### 设定全局的账号名
 ```
   $ git config --global user.name {USER_NAME}
@@ -23,13 +30,6 @@ git reset --hard HEAD^
   //查看
   $ git config user.name 
   $ git config user.email 
-```
-
-#### 检出远程分支
-```
-  git branch -r
-  git checkout origin/REPO
-  git checkout REPO
 ```
 
 #### 缓存账号信息
@@ -50,4 +50,3 @@ git reset --hard HEAD^
   $ git ranch -D REPO
   $ git push origin --delete REPO
 ```
-
