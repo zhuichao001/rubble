@@ -27,7 +27,7 @@ make && make install
 
 #### gdb
 ```
-yum install lzip
+yum install lzip gmp-devel
 wget https://gmplib.org/download/gmp/gmp-6.2.1.tar.lz
 tar xvf gmp-6.2.1.tar.lz --lzip
 cd gmp-6.2.1
