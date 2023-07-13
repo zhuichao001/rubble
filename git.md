@@ -46,7 +46,7 @@ git reset --hard HEAD^
 
 #### 删除本地/远程分支
 ```
-  $ git ranch -d REPO
-  $ git ranch -D REPO
+  $ git branch -d REPO
+  $ git branch -D REPO
   $ git push origin --delete REPO
 ```
