@@ -50,3 +50,10 @@ git reset --hard HEAD^
   $ git branch -D REPO
   $ git push origin --delete REPO
 ```
+
+#### 重命名本地/远程分支
+```
+  $ git branch -m new_branch_name
+  $ git push origin :old_branch_name new_branch_name
+  $ git push origin -u new_branch_name
+```
