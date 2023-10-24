@@ -32,7 +32,7 @@ git reset --hard HEAD^
   $ git config user.email 
 ```
 
-#### 缓存账号信息
+#### 缓存账号信息[免密]
 ```
   git config --global credential.helper store
 ```
