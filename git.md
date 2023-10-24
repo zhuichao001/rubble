@@ -57,3 +57,10 @@ git reset --hard HEAD^
   $ git push origin :old_branch_name new_branch_name
   $ git push origin -u new_branch_name
 ```
+
+#### 复制远程分支
+```
+git clone -b  {BRANCH_NAME}  https://github.com/xxx/yyy.git
+git remote set-url --push origin https://gitlab.com/eee/fff.git
+git push
+```
