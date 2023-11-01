@@ -64,3 +64,8 @@ git clone -b  {BRANCH_NAME}  https://github.com/xxx/yyy.git
 git remote set-url --push origin https://gitlab.com/eee/fff.git
 git push
 ```
+
+#### 检出远程tag
+git tag
+git checkout {TAG_NAME}
+git checkout -b {BRANCH_NAME}
