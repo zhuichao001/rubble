@@ -66,6 +66,8 @@ git push
 ```
 
 #### 检出远程tag
+```
 git tag
 git checkout {TAG_NAME}
 git checkout -b {BRANCH_NAME}
+```
