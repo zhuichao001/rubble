@@ -76,3 +76,12 @@ git checkout -b {BRANCH_NAME}
 ```
 git clone --recursive --branch <branch-name/tag-name> https://github.com/user/repo.git
 ```
+
+#### 将远程submodule本地化
+```
+git add .gitmodules
+git rm --cached {SUBMODULE_NAME}
+rm -rf {SUBMODULE_NAME}
+.gitmodules 注释 submodules
+.git/config 注释 submodules
+```
