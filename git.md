@@ -71,3 +71,8 @@ git tag
 git checkout {TAG_NAME}
 git checkout -b {BRANCH_NAME}
 ```
+
+#### 递归克隆远程分支或tag
+```
+git clone --recursive --branch <branch-name/tag-name> https://github.com/user/repo.git
+```
