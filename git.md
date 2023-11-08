@@ -84,4 +84,5 @@ git rm --cached {SUBMODULE_NAME}
 rm -rf {SUBMODULE_NAME}
 .gitmodules 注释 submodules
 .git/config 注释 submodules
+.git/modules 删除 submodules
 ```
