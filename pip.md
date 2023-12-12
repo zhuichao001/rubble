@@ -9,3 +9,7 @@ tar xvzf redis-3.5.3.tar.gz
 cd redis-3.5.3/
 python3 setup.py install --prefix=/usr/
 ```
+#### 多版本安装依赖必须指明版本
+```
+pip install -t /usr/local/lib/python2.7/site-packages/ xlrd 
+```
