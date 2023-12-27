@@ -14,3 +14,8 @@ perf script -i perf.data &> perf.unfold
 ./FlameGraph/stackcollapse-perf.pl ./perf.unfold &>./perf.fold
 ./FlameGraph/flamegraph.pl ./perf.fold > ./perf.svg
 ```
+
+#### perf top查看某进程的热点函数
+```
+perf top -p {PID} -v -g
+```
