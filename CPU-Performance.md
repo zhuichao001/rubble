@@ -1,5 +1,6 @@
 #### CPU 性能热点
 ```
+# -g开启调用关系分析，-p指定php-fpm的进程号PID
 $ perf top
 Samples: 833  of event 'cpu-clock', Event count (approx.): 97742399
 Overhead  Shared Object       Symbol
