@@ -18,6 +18,11 @@ Method-II:
   (gdb) b <...> if condition
 ```
 
+#### 删除断点
+```
+  (gdb) d <<breakpoint num>>
+```
+
 ####  Continue, Step-in, Step-out or Next
 ```
   (gdb) c
@@ -52,11 +57,26 @@ Method-II:
   Num     Type           Disp Enb Address            What
   1       breakpoint     keep y   0x00000000008005cd in main() at test.cpp:18
   (gdb) ignore 1 1000
-  Will ignore next 1000 crossings of breakpoint 1.
+  #Will ignore next 1000 crossings of breakpoint 1.
   (gdb) run
 ```
 
-#### 删除断点
+#### 多线程调试
 ```
-  (gdb) d <<breakpoint num>>
+  (gdb) info threads
+  #显示所有线程
+  (gdb) thread ID(1,2,3)
+  #切换到指定ID的线程调试
+  (gdb) break {filename}:{lineno} thread all
+  #在所有线程中设置断点
+  (gdb) thread apply ID1 ID2 command
+  #让ID1 ID2两个线程执行GDB命令command
+  (gdb) thread apply all command
+  #让所有被调试线程执行GDB命令command
+  (gdb) set scheduler-locking off 
+  #不锁定任何线程，也就是所有线程都执行，这是默认值
+  (gdb) set scheduler-locking on 
+  #只有当前被调试程序会执行
+  (gdb) set scheduler-locking on step
+  #在单步的时候，除了next外只有当前线程会执行
 ```
