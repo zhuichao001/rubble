@@ -18,10 +18,11 @@ Method-II:
   (gdb) b <...> if condition
 ```
 
-####  Continue, Step-in or Next
+####  Continue, Step-in, Step-out or Next
 ```
   (gdb) c
   (gdb) s
+  (gdb) f
   (gdb) n
 ```
 
