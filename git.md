@@ -86,3 +86,23 @@
   .git/config 注释 submodules
   .git/modules 删除 submodules
 ```
+
+#### 查看远程仓库URL
+```
+git remote -v
+```
+ 
+#### 查看当前分支与远程分支的对应关系
+```
+git branch -vv
+```
+  
+#### 查看.git目录的路径
+```
+git rev-parse --git-dir
+```
+   
+#### 查看更详细的仓库信息，包括远程分支和标签
+```
+git remote show origin
+```
