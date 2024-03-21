@@ -8,6 +8,17 @@
   git submodule update
 ```
 
+#### 修改子项目的分支
+```
+cd path_to_submodule
+git checkout target_branch
+cd ..
+git submodule sync
+git add .gitmodules
+git commit -m "Updated submodule to target_branch"
+git submodule update --init --recursive --remote
+```
+
 #### 撤销最近一次提交
 ```
   //回滚但不删除最近一次修改
