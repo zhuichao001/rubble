@@ -117,3 +117,11 @@ git rev-parse --git-dir
 ```
 git remote show origin
 ```
+
+#### 撤销最近一次提交
+```
+//保留内容
+git reset --soft HEAD~1
+//不保留内容
+git reset --hard HEAD~1
+```
