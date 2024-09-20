@@ -125,3 +125,12 @@ git reset --soft HEAD~1
 //不保留内容
 git reset --hard HEAD~1
 ```
+
+#### 将github仓库同步到gitlab
+```
+git clone https://github.com/username/repository.git
+git remote rm origin
+git remote add origin https://gitlab.com/username/new-repository.git
+git fetch origin
+git push origin HEAD:master
+```
