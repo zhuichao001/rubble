@@ -134,3 +134,9 @@ git remote add origin https://gitlab.com/username/new-repository.git
 git fetch origin
 git push origin HEAD:master
 ```
+
+#### 如何重试下载子模块
+```
+git submodule init
+git submodule update --init --recursive
+```
