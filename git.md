@@ -140,3 +140,22 @@ git push origin HEAD:master
 git submodule init
 git submodule update --init --recursive
 ```
+
+#### 把仓库内的子模块代码变成内部代码并推送至远程
+```
+# 1.删除子模块：
+git submodule deinit <path_to_submodule>
+git rm <path_to_submodule>
+rm -rf .git/modules/<path_to_submodule>
+
+# 2.添加子模块的代码到项目中：
+git add <path_to_submodule>
+git commit -m "Add submodule's content to the repository"
+
+# 3.移除.gitmodules文件中的相关条目：
+git add .gitmodules
+git commit -m "Remove submodule entry from .gitmodules"
+
+# 4推送更改到新的仓库：
+git push origin <branch_name>
+```
