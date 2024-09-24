@@ -7,3 +7,8 @@ find . -type f -amin +10
 ```
 find . -type f -name PREFIX
 ```
+
+#### find 空子目录
+```
+find . -type d -empty -print
+```
