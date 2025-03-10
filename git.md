@@ -160,3 +160,15 @@ git commit -m "Remove submodule entry from .gitmodules"
 # 4推送更改到新的仓库：
 git push origin <branch_name>
 ```
+
+#### 大文件的上传
+`
+yum install -y git-lfs
+git lfs install
+git lfs track "*.gz"
+git add .gitattributes
+git add *.gz
+git commit -m "your commit message"
+git lfs ls-files
+git push origin [Branch]
+`
