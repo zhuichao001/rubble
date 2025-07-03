@@ -27,3 +27,8 @@ gdb
 pmap -d {PID}
 /proc/{PID}/smaps
 ```
+
+#### 查看进程的启动时间
+```
+ps -eo pid,lstart,cmd | grep {PROC_NAME}
+```
